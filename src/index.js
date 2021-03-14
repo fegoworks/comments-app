@@ -1,12 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React, { Fragment } from 'react';
+import { render,  } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import ThemeWrapper from '<styles>/ThemeWrapper/ThemeWrapper';
+import GlobalStyle from '<styles>/global';
+import BaseRoutes from '<pages>/index';
+
+const App = () => (
+  <ThemeWrapper>
+    <Fragment>
+      <GlobalStyle />
+      <Router>
+        <BaseRoutes />
+      </Router>
+    </Fragment>
+  </ThemeWrapper>
 );
 
+export default App;
+
+render(<App />, document.getElementById('app'));
