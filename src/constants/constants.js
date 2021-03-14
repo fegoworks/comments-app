@@ -1,0 +1,1 @@
+export const BASE_API_URL = 'https://www.myminifactory.com/api/v2/objects/65076/'
