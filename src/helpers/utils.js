@@ -1,0 +1,1 @@
+export const getLocaleDate = (date) => new Date(date).toLocaleDateString('en-GB', { timeZone: 'UTC' })
