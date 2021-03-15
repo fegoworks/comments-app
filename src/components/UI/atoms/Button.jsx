@@ -25,6 +25,7 @@ const Button = ({
   borderRadius,
   width,
   handleClick,
+  margin
 }) => (
   <Button.Container
     className={className}
@@ -39,6 +40,7 @@ const Button = ({
     borderRadius={borderRadius}
     width={width}
     onClick={handleClick}
+    margin={margin}
   >
     {children}
   </Button.Container>
@@ -56,6 +58,7 @@ Button.Container = styled.button`
     display,
     textAlign,
     color,
+    margin,
     theme: { fontSize, fontWeight, textColors },
   }) => `
     text-align: ${textAlign};
@@ -69,7 +72,7 @@ Button.Container = styled.button`
     cursor: pointer;
     border-radius: ${borderRadius || '5px'};
     width: ${width};
-
+    margin: ${margin};
     :focus {
     outline: none;
   }
@@ -93,6 +96,7 @@ Button.propTypes = {
   textAlign: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
   fontWeight: PropTypes.oneOf(Object.keys(fontWeight)),
   padding: PropTypes.string,
+  margin: PropTypes.string,
 };
 
 export default Button;
