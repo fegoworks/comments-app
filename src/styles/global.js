@@ -12,6 +12,8 @@ const GlobalStyle = createGlobalStyle `
   body {
     margin: 0;
     padding: 0;
+    /* background-color: #c8c6a7; */
+    background: #a4ebf3;
     font-family: Ubuntu, 'times new roman', times, roman, serif;
   }
 `
