@@ -54,7 +54,7 @@ For any suggestions or contributions or issues please do raise them or email me.
 For **Contributiions**, Please clone the repo and implement a PR I would appreciate it
 
 #### Status
-Still undergoing testing
+Still a rough sketch, undergoing testing
 
 #### Features Pending
 At present the comments API endpoint does not return replies along with the comments response, if it did, the current implementation will accomodate it like this -
