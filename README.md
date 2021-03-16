@@ -5,6 +5,8 @@ This is a frontEnd application that allows a user to view comments, attachments 
 
 <img width="1440" alt="Client Side" src="./screenshots/image2.png">
 
+<img width="1440" alt="Comments" src="./screenshots/image3.png">
+
 ### Table of Contents
 
 - [Getting Started](#getting-started)
